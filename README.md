@@ -1,3 +1,5 @@
+![dbt CI](https://github.com/raomohsin54/dbt-snowflake-logistics-analytics/actions/workflows/dbt-ci.yml/badge.svg)
+
 # Snowflake dbt Logistics Analytics Engineering Project
 
 ## Project Overview
