@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Snowflake sample TPCH data used to simulate logistics and order analytics."
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+      - name: CUSTOMER
+        description: "Customer master data."
+      - name: ORDERS
+        description: "Customer order headers."
+      - name: LINEITEM
+        description: "Order line items including quantity, price, discount, tax and shipping dates."
+      - name: SUPPLIER
+        description: "Supplier master data."
+      - name: PART
+        description: "Part/product master data."
+      - name: PARTSUPP
+        description: "Relationship between parts and suppliers."
+      - name: NATION
+        description: "Nation lookup table."
+      - name: REGION
+        description: "Region lookup table."

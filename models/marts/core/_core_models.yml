@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: dim_geography
+    description: "Geography dimension containing nation and region attributes."
+    columns:
+      - name: nation_key
+        description: "Unique nation identifier."
+        tests:
+          - not_null
+          - unique
+      - name: nation_name
+        description: "Nation name."
+        tests:
+          - not_null
+      - name: region_key
+        description: "Region identifier."
+        tests:
+          - not_null
+      - name: region_name
+        description: "Region name."
+        tests:
+          - not_null
+
+  - name: dim_customers
+    description: "Customer dimension enriched with geography attributes."
+    columns:
+      - name: customer_key
+        description: "Unique customer identifier."
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: "Customer name."
+        tests:
+          - not_null
+      - name: market_segment
+        description: "Customer market segment."
+        tests:
+          - not_null
+      - name: nation_key
+        description: "Customer nation key."
+        tests:
+          - not_null
+      - name: region_key
+        description: "Customer region key."
+        tests:
+          - not_null
+
+  - name: dim_suppliers
+    description: "Supplier dimension enriched with geography attributes."
+    columns:
+      - name: supplier_key
+        description: "Unique supplier identifier."
+        tests:
+          - not_null
+          - unique
+      - name: supplier_name
+        description: "Supplier name."
+        tests:
+          - not_null
+      - name: nation_key
+        description: "Supplier nation key."
+        tests:
+          - not_null
+      - name: region_key
+        description: "Supplier region key."
+        tests:
+          - not_null
+
+  - name: dim_parts
+    description: "Part/product dimension containing manufacturer, brand, type, size, container, and retail price attributes."
+    columns:
+      - name: part_key
+        description: "Unique part identifier."
+        tests:
+          - not_null
+          - unique
+      - name: part_name
+        description: "Part name."
+        tests:
+          - not_null
+      - name: manufacturer
+        description: "Part manufacturer."
+        tests:
+          - not_null
+      - name: brand
+        description: "Part brand."
+        tests:
+          - not_null
+      - name: retail_price
+        description: "Retail price of the part."
+        tests:
+          - not_null
