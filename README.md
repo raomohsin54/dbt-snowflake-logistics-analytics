@@ -18,6 +18,20 @@ It uses Snowflake's built-in TPCH sample dataset to simulate a logistics and ord
 
 ## Architecture
 
+## Project Screenshots
+
+### dbt Lineage Graph
+
+![dbt lineage graph](screenshots/dbt_lineage_fct_order_line_items.png)
+
+### Successful dbt Build
+
+![dbt build success](screenshots/dbt_build_success.png)
+
+### Snowflake Mart Tables
+
+![Snowflake mart tables](screenshots/snowflake_mart_tables.png)
+
 The project follows a layered analytics engineering pattern:
 
 ```text
