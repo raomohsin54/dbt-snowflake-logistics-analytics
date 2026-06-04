@@ -1,0 +1,14 @@
+logistics_analytics:
+  target: ci
+  outputs:
+    ci:
+      type: snowflake
+      account: "WXYPQAB-AK63760"
+      user: "MOHSINSADLEIRS"
+      password: "Bba@3362006054"
+      role: "ACCOUNTADMIN"
+      warehouse: "COMPUTE_WH"
+      database: "DBT_LOGISTICS_DEV"
+      schema: "CI"
+      threads: 4
+      client_session_keep_alive: false
